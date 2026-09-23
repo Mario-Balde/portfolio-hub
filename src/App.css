@@ -1,0 +1,154 @@
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.hero-intro {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #f3f4f6;
+}
+
+.hero h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.75rem;
+  color: #a5b4fc;
+}
+
+.hero-description {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #9ca3af;
+}
+
+.projects-heading {
+  margin: 0 0 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f3f4f6;
+}
+
+.projects-intro {
+  max-width: 700px;
+  margin: -1rem auto 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+.projects-intro a {
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+.projects-intro a:hover {
+  text-decoration: underline;
+}
+
+#root {
+  max-width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+main > h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 2rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #1f1f1f;
+  text-align: left;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.technology {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #333;
+  font-size: 0.85rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  background: #535bf2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .projects-intro {
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  #root {
+    padding: 2rem 1rem;
+  }
+
+  main > section {
+    grid-template-columns: 1fr;
+  }
+}
