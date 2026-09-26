@@ -3,7 +3,7 @@ export default function Hero() {
     <header className="hero">
       <p className="hero-intro">Hello, I'm</p>
 
-      <h1>Mario Baldé</h1>
+      <h1>Mario Balde</h1>
 
       <h2>Junior Frontend Engineer | React</h2>
 
