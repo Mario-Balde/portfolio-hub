@@ -28,6 +28,7 @@ function App() {
           <ProjectCard
             key={project.title}
             title={project.title}
+            status={project.status}
             description={project.description}
             technologies={project.technologies}
             liveUrl={project.liveUrl}

@@ -1,5 +1,6 @@
 export default function ProjectCard({
   title,
+  status,
   description,
   technologies,
   liveUrl,
@@ -7,6 +8,8 @@ export default function ProjectCard({
 }) {
   return (
     <article className="project-card">
+      {status && <p className="project-status">{status}</p>}
+
       <h2>{title}</h2>
 
       <p className="project-description">{description}</p>
@@ -19,25 +22,31 @@ export default function ProjectCard({
         ))}
       </div>
 
-      <div className="project-links">
-        <a
-          href={liveUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="project-link"
-        >
-          Live Demo ↗
-        </a>
+      {(liveUrl || githubUrl) && (
+        <div className="project-links">
+          {liveUrl && (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              Live Demo ↗
+            </a>
+          )}
 
-        <a
-          href={githubUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="project-link"
-        >
-          GitHub ↗
-        </a>
-      </div>
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              GitHub ↗
+            </a>
+          )}
+        </div>
+      )}
     </article>
   );
 }

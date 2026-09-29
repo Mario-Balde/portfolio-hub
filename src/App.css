@@ -79,6 +79,17 @@ main > section {
   text-align: left;
 }
 
+.project-status {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: #333;
+  color: #a5b4fc;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .project-card h2 {
   margin-top: 0;
   margin-bottom: 1rem;

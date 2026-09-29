@@ -1,5 +1,14 @@
 const projects = [
   {
+    title: "Password Generator App",
+    status: "Project in Progress",
+    description:
+      "A responsive password generator built with React and Tailwind CSS.",
+    technologies: ["React", "Tailwind CSS"],
+    liveUrl: "",
+    githubUrl: "",
+  },
+  {
     title: "REST Countries API",
     description:
       "A responsive React application for exploring countries, with search, region filtering, detailed country information, and border-country navigation.",
